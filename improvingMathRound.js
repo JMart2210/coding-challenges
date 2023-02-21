@@ -9,5 +9,7 @@
 Math.roundTo = function (number, precision) {
    return Math.round(number * Math.pow(10, precision)) / Math.pow(10, precision)
 }
-
 console.log(Math.roundTo(9.9999, 3));
+
+//This solution utilized the toFixed method. I wasn't aware of it, just solved using the clues provided.
+Math.roundTo = (number, precision) => Number(number.toFixed(precision));
