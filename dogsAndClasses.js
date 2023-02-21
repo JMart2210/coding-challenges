@@ -14,17 +14,8 @@ class Dog {
 // You are then given a working class Labrador as your initial code.
 // Shorten it so that it meets the strict character count requirements for this Kata.
 
-class Labrador {
+class Labrador extends Dog {
     constructor(name, age, gender, master) {
-      this.name = name;
-      this.age = age;
-      this.gender = gender;
-      this.species = "Labrador";
-      this.legs = 4;
-      this.size = "Large";
-      this.master = master;
-      this.loyal = true;
+      super(name, age, gender, "Labrador", "Large", master, true)
     }
   }
-
-//   11:07 hard stop
