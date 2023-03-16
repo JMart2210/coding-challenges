@@ -13,10 +13,3 @@ function cleanedCounts(data) {
     })
 }
 console.log( cleanedCounts([5,5,6,5,5,5,5,6])) // [5,5,6,6,6,6,6,6]
-
-// Posted solution - I could have defined m and returned it on the same line
-function cleanedCounts(a){
-    let m = 0
-    return a.map(e=>m=Math.max(e,m))
-  }
-// 551 - 553
