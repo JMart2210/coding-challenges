@@ -6,6 +6,7 @@ Solutions to Codewars and Leetcode problems that I've completed, including a lin
 ## My Profiles: 
 
 **Codewars:** https://www.codewars.com/users/JMart2210
+
 **Exercism:** https://exercism.org/profiles/JMart2210
 
 **Tech used:** JavaScript
