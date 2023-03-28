@@ -1,7 +1,7 @@
 <a href="https://www.codewars.com/users/JMart2210"><img src="https://www.codewars.com/users/JMart2210/badges/large" alt="codewars badge with score and rank"></a>
 
 # Codewars and Leetcode Solutions
-Solutions to Codewars and Leetcode problems that I've completed, including a link to the problem, the instructions, my thought process before solving, the solution I came up with, and the test cases provided
+Solutions to Codewars problems, and link below to exercism profile show challenges I've completed. Codewars includes a link to the problem, the instructions, my thought process before solving, the solution I came up with, and the test cases I used.
 
 ## My Profiles: 
 
