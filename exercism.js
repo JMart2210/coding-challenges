@@ -54,3 +54,20 @@ const age = (planet, sec) => {
   }
   return Number((sec / 31557600 / convert[planet]).toFixed(2));
 };
+
+// https://exercism.org/tracks/javascript/exercises/pangram
+const isPangram = (sentence) => {
+  if (sentence.length === 0) return false;
+  sentence = sentence.toLowerCase()
+  const check = 'abcdefghijklmnopqrstuvwxyz'.split('')
+  let result = true;
+  console.log(sentence)
+  check.forEach( ltr => {
+    if (sentence.includes(ltr)) {
+      console.log(`includes ${ltr}`);
+    } else {
+      result = false;
+    }
+  })
+  return result;
+};
