@@ -4,6 +4,7 @@
   "description": "<a href=\"https://www.codewars.com/users/JMart2210\"><img src=\"https://www.codewars.com/users/JMart2210/badges/large\" alt=\"codewars badge with score and rank\"></a>",
   "main": "codeSignal.js",
   "scripts": {
+    "watch": "npx jest --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
