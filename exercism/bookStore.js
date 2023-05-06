@@ -56,7 +56,6 @@ const cost = (books) => {
     cache[3]--
     cache[4] = cache[4] ? cache[4] + 2 : 2;
   }
-  console.log(cache)
   let total = 0;
   for (let key in cache) {
     if (key === '5') {
