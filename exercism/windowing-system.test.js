@@ -128,35 +128,39 @@ Size.prototype.resize = function (nx, ny) {
   this.width = nx;
   this.height = ny;
 }
-
-export function Position(px=0, py=0){
-  this.x = px;
-  this.y = py;
+export function Position(x=0, y=0){
+  this.x = x;
+  this.y = y;
 }
 Position.prototype.move = function (npx, npy) {
   this.x = npx;
   this.y = npy;
 }
-
 export class ProgramWindow {
   constructor() {
     this.screenSize = new Size(800, 600);
     this.size = new Size();
     this.position = new Position();
-    this.resize = (Size) => {
-      let x = Math.max(1, Size.width)
-      x = Math.min(x, (this.screenSize.width - this.position.x))
-      let y = Math.max(1, Size.height)
-      y = Math.min(y, (this.screenSize.height - this.position.y))
-      this.size.resize(x, y)
-    }
-    this.move = (Position) => {
-      let x = Math.max(0, Position.x);
-      let y = Math.max(0, Position.y)
-      x = Math.min(x, (this.screenSize.width - this.size.width));
-      y = Math.min(y, (this.screenSize.height - this.size.height));
-            
-      this.position.move(x, y)
-    }
   }
+}
+ProgramWindow.prototype.resize = function(size) {
+  let x = Math.max(1, size.width)
+  x = Math.min(x, (this.screenSize.width - this.position.x))
+  let y = Math.max(1, size.height)
+  y = Math.min(y, (this.screenSize.height - this.position.y))
+  this.size.resize(x, y)
+}
+ProgramWindow.prototype.move = function (position) {
+  let x = Math.max(0, position.x);
+  let y = Math.max(0, position.y)
+  x = Math.min(x, (this.screenSize.width - this.size.width));
+  y = Math.min(y, (this.screenSize.height - this.size.height));
+  this.position.move(x, y)
+}
+export function changeWindow(programWindow) {
+  const updateSize = new Size(400,300)
+  programWindow.resize(updateSize);
+  const updatePosition = new Position(100,150);
+  programWindow.move(updatePosition);
+  return programWindow;
 }
