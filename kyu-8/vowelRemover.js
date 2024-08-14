@@ -4,7 +4,7 @@ function shortcut (string) {
     return string.split('').map( str => vowels.includes(str) ? '' : str).join('');
   }
 
- console.log(shortcut("hello") == "hll"); // TRUE
-// "codewars"  -->  "cdwrs"
+console.log(shortcut("hello") == "hll"); // TRUE
+console.log(shortcut("codewars") == "cdwrs"); // TRUE
 // "goodbye"   -->  "gdby"
 // "HELLO"     -->  "HELLO"
